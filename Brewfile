@@ -48,6 +48,9 @@ brew 'hub'
 # Fuzzy finder
 brew 'fzf'
 
+# Print syntax-highlighted text
+brew 'highlight'
+
 # thoughtbot stuff like rcm
 tap 'thoughtbot/formulae'
 brew 'rcm'

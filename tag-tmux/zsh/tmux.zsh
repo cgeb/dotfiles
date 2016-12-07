@@ -30,3 +30,10 @@ _ensure_tmux_is_running() {
     tmux new -d
   fi
 }
+
+# fe = fzf-edit
+fe(){
+  local file
+  file=$(ag -g "$1" | fzf-tmux -d 40 --select-1 --exit-0 --preview "(highlight -O ansi {} || cat {}) 2> /dev/null")
+  [ -n "$file" ] && vim "$file"
+}
