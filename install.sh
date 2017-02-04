@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -e
-
 is_osx(){
   [ "$(uname -s)" = Darwin ]
 }
